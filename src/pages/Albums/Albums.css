@@ -1,0 +1,19 @@
+
+.con-albums{
+    padding: 100px var(--padding-left-right) 50px var(--padding-left-right) ;
+}
+
+.con-albums .header{
+    margin: 3rem 0;
+}
+
+.con-albums .header h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.con-albums .header p{
+    color: var(--color-paragraf);
+    letter-spacing: 1px;
+    font-weight: 600;
+}

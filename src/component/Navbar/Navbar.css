@@ -1,0 +1,37 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 108.8px;
+    padding: 2rem var(--padding-left-right);
+    background-color: var(--pg-navbar);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header h2{
+    color: var(--second-color);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width:1279px){
+    header h2 {
+        font-size: 1.5rem;
+    }
+    }
+
+    @media (max-width:949px){
+        header h2 {
+            font-size: 1.2rem;
+        }
+        }
+
+        @media (max-width:767px){
+            header h2{
+                font-size: 1rem;
+            }
+            }

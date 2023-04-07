@@ -1,0 +1,15 @@
+.logout{
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--pg-button);
+    background: var(--pg-button);
+    font-weight: 800;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    color: var(--second-color);
+    font-family: var(--font-family);
+    transition: 1s;
+}
+
+.logout:hover{
+    background: transparent;
+}

@@ -1,0 +1,55 @@
+.card{
+    width: calc(92% / 4);
+    background-color: var(--pg-card-album);
+    border: 1px solid var(--color-paragraf);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.6s;
+    box-shadow:  var(--shadow-card-album);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.card img{
+    width: 100%;
+    min-height: 280px;
+    max-height: 280px;
+}
+
+.card .info-art{
+    padding: 4%;
+}
+
+
+.card .info-art p{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: var(--color-paragraf);
+}
+
+.card .info-art h2{
+    font-size: 1.7rem;
+}
+
+
+    
+@media (max-width:1279px){
+    .card{
+        width: calc(92% / 3);
+    }
+    }
+
+    @media (max-width:949px){
+        .card{
+            width: calc(92% / 2);
+        }
+        }
+
+        @media (max-width:767px){
+            .card{
+                width: 100%;
+            }
+            }

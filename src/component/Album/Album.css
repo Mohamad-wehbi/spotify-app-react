@@ -1,0 +1,65 @@
+.album{
+    width: calc(92% / 4);
+    background-color: var(--pg-card-album);
+    border: 1px solid var(--color-paragraf);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.6s;
+    box-shadow:  var(--shadow-card-album);  
+}
+
+.album:hover{
+    transform: scale(1.05);
+}
+
+
+.album .link{
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--color-paragraf);
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+
+.album img{
+    width: 100%;
+    min-height: 280px;
+    max-height: 280px;
+}
+
+.album .info-album{
+    padding: 4%;
+}
+
+
+.album .info-album p:nth-child(2){
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.album .info-album p{
+    color: var(--color-paragraf);
+}
+
+
+@media (max-width:1279px){
+    .album{
+        width: calc(92% / 3);
+    }
+    }
+
+    @media (max-width:949px){
+        .album{
+            width: calc(92% / 2);
+        }
+        }
+
+        @media (max-width:767px){
+            .album{
+                width: 100%;
+            }
+            }

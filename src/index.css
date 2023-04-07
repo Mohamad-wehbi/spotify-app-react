@@ -1,0 +1,36 @@
+:root{
+  --color-paragraf : #6f6f6fe6;
+  --main-color: #000000;
+  --pg-card-album: #ffdfdf36;
+  --padding-left-right: 4%;
+  --shadow-card-album: 0 20px 20px 0 #0000009e;
+  --shadow-input: 0 20px 20px 0 #0000003c;
+  --shadow-link-login: 0 20px 20px 0 #0000003c;
+  --pg-button: #dc143c;
+  --pg-navbar: #000;
+  --second-color: #ffffff;
+  --main-pg: #fff;
+  --font-family: cursive;
+  --star-color: #ff8c00;
+  --icon-color-search: #c9b4b4;
+  --border-input: #00000073;
+  --border-link-login: #00000073;
+  --color-icon-spotify: #006400;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: var(--main-pg);
+}
+
+a{
+  color: var(--main-color);
+}
