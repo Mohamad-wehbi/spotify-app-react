@@ -15,16 +15,17 @@ function UseContextProvider({children}){
         setArtistName(value);
     }
 
-    function noToken(navigate){
-        setToken(window.localStorage.getItem('token'));
-        if(!token){
-            navigate('/login');
-        }
-    }
 
     function isToken(navigate){
         setToken(window.localStorage.getItem('token'));
         if(token){
+            navigate('/search');
+        }
+    }
+
+    function noToken(navigate){
+        setToken(window.localStorage.getItem('token'));
+        if(!token){
             navigate('/');
         }
     }

@@ -8,14 +8,31 @@ import { artistContext } from '../../component/Context/Context';
 const Login = () => {
 
   const navicate = useNavigate();
-  const {isToken} = useContext(artistContext);
+  const {changeToken, isToken} = useContext(artistContext);
 
   const CLIENT_ID = '40456890751f40dbb73bd6e4b377042a';
   const Redirect_URI = 'http://localhost:3000/';
   const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
   const RESPONSE_TYPE = 'token';
 
-  useEffect(() => isToken(navicate), []);
+  
+
+  function loginArt(){
+
+      let token = window.localStorage.getItem('token');
+      let hash = window.location.hash;
+  
+      if(!token && hash){
+        token = hash.slice(1).split('&').find(e => e.startsWith('access_token')).split('=')[1];
+        window.location.hash = '';
+        window.localStorage.setItem('token', token);
+        changeToken(token);
+  
+      }
+    }
+
+  useEffect(() => isToken(navicate));
+  useEffect(() => loginArt, []);
 
 
     return (

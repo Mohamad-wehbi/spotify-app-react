@@ -7,21 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
 
-    const {artistName, changeArtistName, changeToken}  = useContext(artistContext);
+    const {artistName, changeArtistName, noToken}  = useContext(artistContext);
     const navicate = useNavigate();
-
-    function loginArt(){
-      let token = window.localStorage.getItem('token');
-      let hash = window.location.hash;
-  
-      if(!token && hash){
-        token = hash.slice(1).split('&').find(e => e.startsWith('access_token')).split('=')[1];
-        window.location.hash = '';
-        window.localStorage.setItem('token', token);
-        changeToken(token);
-  
-      }
-    }
 
 
     function getArtistName(v){
@@ -30,12 +17,7 @@ const Search = () => {
       }
     }
 
-    const saveToken = () => changeToken(window.localStorage.getItem('token'));
-      
-   
-
-   useEffect(() => loginArt, []);
-   useEffect(() => saveToken ,[]);
+    useEffect(() => noToken(navicate) );
 
 
     return (

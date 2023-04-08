@@ -9,7 +9,7 @@ import { useState, useEffect, useContext } from 'react';
 
 function Albums(){
 
-    let artistId = useParams();
+    const artistId = useParams();
     const navicate = useNavigate();
     const [ albums ,setAlbums ] = useState([]);
     const {token, noToken} = useContext(artistContext);

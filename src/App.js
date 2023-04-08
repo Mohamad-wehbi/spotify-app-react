@@ -14,8 +14,8 @@ const App = () => {
     <Navbar />
     <createHashRouter>
     <Routes>
-       <Route path='/' element={<Search />}/>
-       <Route path='/Login' element={<Login />}/>
+       <Route path='/' element={<Login />}/>
+       <Route path='/search' element={<Search />}/>
        <Route path='/Artists' element={<Cards />}/>
        <Route path='/Albums/:name/:id' element={<Albums />}/>
        <Route path='*' element={<NotFound />}/>
