@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Spotify-React-App/static/css/main.6123044f.css",
-    "main.js": "/Spotify-React-App/static/js/main.77d53dd8.js",
+    "main.js": "/Spotify-React-App/static/js/main.26a88a60.js",
     "static/media/alb.jpg": "/Spotify-React-App/static/media/alb.a0d7e2f6a5c0bade4d7b.jpg",
     "index.html": "/Spotify-React-App/index.html",
     "main.6123044f.css.map": "/Spotify-React-App/static/css/main.6123044f.css.map",
-    "main.77d53dd8.js.map": "/Spotify-React-App/static/js/main.77d53dd8.js.map"
+    "main.26a88a60.js.map": "/Spotify-React-App/static/js/main.26a88a60.js.map"
   },
   "entrypoints": [
     "static/css/main.6123044f.css",
-    "static/js/main.77d53dd8.js"
+    "static/js/main.26a88a60.js"
   ]
 }
